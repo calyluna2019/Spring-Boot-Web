@@ -8,5 +8,8 @@
 <h1 th:text="${Title}"></h1>
 <span th:text="${User.name}"></span>
 <span th:text="${User.lastName}"></span>
+<br>
+<span th:if="${User.email!=null}" th:text="${User.email}"></span><br>
+<span th:if="${User.email == null}">the user doesn't have email</span>
 </body>
 </html>
